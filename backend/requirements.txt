@@ -13,7 +13,7 @@ alembic==1.13.2
 psycopg2-binary==2.9.9
 ortools==9.15.6755
 scikit-learn==1.5.2
-numpy==1.26.4
+numpy==2.5.0
 anthropic==0.34.2
 python-dotenv==1.0.1
 requests==2.32.3
