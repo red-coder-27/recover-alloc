@@ -1,6 +1,6 @@
 // RECOVER-ALLOC Frontend Control Center App Logic — Phase 8 Hardened
 
-const API_BASE = 'http://localhost:8000'; // Relative or local server API
+const API_BASE = ''; // Relative or local server API
 
 let currentRunId = null;
 let currentAllocationId = null;

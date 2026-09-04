@@ -571,6 +571,7 @@ def get_evaluation_compare():
 
 
 # Mount Static Assets for Frontend UI if present
-frontend_path = os.path.join(os.path.dirname(__file__), "..", "..", "frontend")
+frontend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend"))
 if os.path.exists(frontend_path):
-    app.mount("/app", StaticFiles(directory=frontend_path, html=True), name="frontend")
+    app.mount("/app", StaticFiles(directory=frontend_path, html=True), name="frontend_app")
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend_root")
