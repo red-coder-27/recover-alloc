@@ -5,6 +5,7 @@ audit log, and evaluation metrics cleanly without duplicating business logic.
 """
 import os
 import sys
+import threading
 import time
 import uuid
 from decimal import Decimal
@@ -112,8 +113,11 @@ def _compute_item_probabilities(items: dict[str, FixtureItem]) -> dict[tuple[str
     return probabilities
 
 
+_allocation_cache_lock = threading.Lock()
+
+
 @lru_cache(maxsize=4)
-def _get_default_allocation_data(n_items: int = 100):
+def _get_cached_default_allocation_internal(n_items: int = 100):
     items = _load_batch_items(n_items)
     probabilities = _compute_item_probabilities(items)
     budget = DEMO_RESOURCE_BUDGET.copy()
@@ -123,7 +127,25 @@ def _get_default_allocation_data(n_items: int = 100):
         resources_budget=budget,
         interventions_catalog=INTERVENTION_CATALOG,
     )
-    return items, probabilities, budget, res
+    naive_res = naive_sort_allocate(
+        items_by_id=items,
+        probabilities=probabilities,
+        resources_budget=budget,
+        interventions_catalog=INTERVENTION_CATALOG,
+    )
+    return items, probabilities, budget, res, naive_res
+
+
+def _get_default_allocation_data(n_items: int = 100):
+    with _allocation_cache_lock:
+        return _get_cached_default_allocation_internal(n_items)
+
+
+# Startup Pre-warming of default 100-item demo allocation
+try:
+    _get_default_allocation_data(100)
+except Exception:
+    pass
 
 
 # Request Models
@@ -161,7 +183,7 @@ def health_check():
 
 @app.get("/dashboard/summary")
 def get_dashboard_summary():
-    items, probabilities, budget, res = _get_default_allocation_data(100)
+    items, probabilities, budget, res, naive_res = _get_default_allocation_data(100)
 
     total_revenue_at_risk = sum(float(item.amount) for item in items.values())
 
@@ -208,13 +230,22 @@ def get_dashboard_summary():
         },
         "solver_status": res.status.value,
         "solve_time_ms": res.solve_time_ms,
+        "compare_naive": {
+            "naive_expected_objective": float(naive_res.objective_value),
+            "mcmkp_expected_objective": float(res.objective_value),
+            "incremental_gain_inr": float(res.objective_value) - float(naive_res.objective_value),
+            "percentage_gain": round(
+                100.0 * (float(res.objective_value) - float(naive_res.objective_value)) / float(naive_res.objective_value),
+                2,
+            ) if float(naive_res.objective_value) > 0 else 0.0,
+        },
     }
 
 
 @app.get("/recovery/items")
 def get_recovery_items(limit: int = Query(100, ge=1, le=200)):
     if limit == 100:
-        items, probabilities, budget, res = _get_default_allocation_data(100)
+        items, probabilities, budget, res, _ = _get_default_allocation_data(100)
     else:
         items = _load_batch_items(limit)
         probabilities = _compute_item_probabilities(items)
@@ -283,7 +314,7 @@ def create_recovery_plan(req: PlanRequest):
         }
 
     if req.n_items == 100 and req.retry_slots == 35 and req.whatsapp_quota == 50 and req.human_hours == 8 and not req.failure_scenario:
-        items, probabilities, budget, mcmkp_res = _get_default_allocation_data(100)
+        items, probabilities, budget, mcmkp_res, naive_res = _get_default_allocation_data(100)
     else:
         items = _load_batch_items(req.n_items)
         if req.failure_scenario == "budget_exhaustion":
@@ -292,6 +323,7 @@ def create_recovery_plan(req: PlanRequest):
             budget = {"retry_slots": req.retry_slots, "whatsapp_quota": req.whatsapp_quota, "human_hours": req.human_hours}
         probabilities = _compute_item_probabilities(items)
         mcmkp_res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
+        naive_res = naive_sort_allocate(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
 
     # Solve Naive Sort Baseline
     naive_res = naive_sort_allocate(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)

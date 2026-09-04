@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Load primary dashboard tab essentials in parallel for instant interactivity
   await Promise.all([
     loadDashboardSummary(),
-    loadRecoveryItems(),
-    runInitialPlan()
+    loadRecoveryItems()
   ]);
 
   // Load secondary tabs asynchronously in background
@@ -92,6 +91,12 @@ async function loadDashboardSummary() {
 
     document.getElementById('res-human-text').innerText = `${u.human_hours || 0} / ${b.human_hours || 8} hrs`;
     document.getElementById('res-human-fill').style.width = `${pct.human_hours || 0}%`;
+
+    // Live Batch Comparison
+    if (data.compare_naive) {
+      document.getElementById('comp-naive-obj').innerText = formatINR(data.compare_naive.naive_expected_objective);
+      document.getElementById('comp-optimal-obj').innerText = formatINR(data.compare_naive.mcmkp_expected_objective);
+    }
 
   } catch (err) {
     console.error('Failed to load dashboard summary:', err);
