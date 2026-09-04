@@ -8,15 +8,21 @@ let activeAllocationsMap = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
   initTabs();
-  await loadDashboardSummary();
-  await loadRecoveryItems();
-  await loadAuditLog();
-  await loadExecutions();
-  await loadEvaluationSummary();
-  await loadEvaluationCompare();
 
-  // Run initial plan calculation to ensure Live Batch Comparison cards are populated
-  await runInitialPlan();
+  // Load primary dashboard tab essentials in parallel for instant interactivity
+  await Promise.all([
+    loadDashboardSummary(),
+    loadRecoveryItems(),
+    runInitialPlan()
+  ]);
+
+  // Load secondary tabs asynchronously in background
+  Promise.all([
+    loadAuditLog(),
+    loadExecutions(),
+    loadEvaluationSummary(),
+    loadEvaluationCompare()
+  ]).catch(err => console.error('Secondary tab prefetch error:', err));
 
   // Attach Button Listeners (explicit arrow function avoids passing MouseEvent as scenario)
   const btnReplan = document.getElementById('btn-replan');

@@ -17,6 +17,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from functools import lru_cache
+
 from api.db import get_db_connection, init_db, log_audit_event, get_all_audit_events, get_all_executions
 from diagnosis.rule_diagnoser import diagnose as rule_diagnose
 from domain.enums import ExecutionStatus, InterventionType, ItemType, PolicyOutcome, SolverStatus, VALID_INTERVENTIONS_BY_ITEM_TYPE
@@ -110,6 +112,20 @@ def _compute_item_probabilities(items: dict[str, FixtureItem]) -> dict[tuple[str
     return probabilities
 
 
+@lru_cache(maxsize=4)
+def _get_default_allocation_data(n_items: int = 100):
+    items = _load_batch_items(n_items)
+    probabilities = _compute_item_probabilities(items)
+    budget = DEMO_RESOURCE_BUDGET.copy()
+    res = solve_mcmkp(
+        items_by_id=items,
+        probabilities=probabilities,
+        resources_budget=budget,
+        interventions_catalog=INTERVENTION_CATALOG,
+    )
+    return items, probabilities, budget, res
+
+
 # Request Models
 class PlanRequest(BaseModel):
     n_items: int = 100
@@ -145,12 +161,7 @@ def health_check():
 
 @app.get("/dashboard/summary")
 def get_dashboard_summary():
-    items = _load_batch_items(100)
-    probabilities = _compute_item_probabilities(items)
-    budget = DEMO_RESOURCE_BUDGET.copy()
-
-    # Run MCMKP Allocation
-    res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
+    items, probabilities, budget, res = _get_default_allocation_data(100)
 
     total_revenue_at_risk = sum(float(item.amount) for item in items.values())
 
@@ -202,9 +213,12 @@ def get_dashboard_summary():
 
 @app.get("/recovery/items")
 def get_recovery_items(limit: int = Query(100, ge=1, le=200)):
-    items = _load_batch_items(limit)
-    probabilities = _compute_item_probabilities(items)
-    res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=DEMO_RESOURCE_BUDGET, interventions_catalog=INTERVENTION_CATALOG)
+    if limit == 100:
+        items, probabilities, budget, res = _get_default_allocation_data(100)
+    else:
+        items = _load_batch_items(limit)
+        probabilities = _compute_item_probabilities(items)
+        res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=DEMO_RESOURCE_BUDGET, interventions_catalog=INTERVENTION_CATALOG)
 
     item_list = []
     for item_id, item in items.items():
@@ -268,17 +282,16 @@ def create_recovery_plan(req: PlanRequest):
             "compare_naive": None,
         }
 
-    items = _load_batch_items(req.n_items)
-    
-    if req.failure_scenario == "budget_exhaustion":
-        budget = {"retry_slots": 2, "whatsapp_quota": 2, "human_hours": 0}
+    if req.n_items == 100 and req.retry_slots == 35 and req.whatsapp_quota == 50 and req.human_hours == 8 and not req.failure_scenario:
+        items, probabilities, budget, mcmkp_res = _get_default_allocation_data(100)
     else:
-        budget = {"retry_slots": req.retry_slots, "whatsapp_quota": req.whatsapp_quota, "human_hours": req.human_hours}
-
-    probabilities = _compute_item_probabilities(items)
-
-    # Solve Optimal MCMKP
-    mcmkp_res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
+        items = _load_batch_items(req.n_items)
+        if req.failure_scenario == "budget_exhaustion":
+            budget = {"retry_slots": 2, "whatsapp_quota": 2, "human_hours": 0}
+        else:
+            budget = {"retry_slots": req.retry_slots, "whatsapp_quota": req.whatsapp_quota, "human_hours": req.human_hours}
+        probabilities = _compute_item_probabilities(items)
+        mcmkp_res = solve_mcmkp(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
 
     # Solve Naive Sort Baseline
     naive_res = naive_sort_allocate(items_by_id=items, probabilities=probabilities, resources_budget=budget, interventions_catalog=INTERVENTION_CATALOG)
