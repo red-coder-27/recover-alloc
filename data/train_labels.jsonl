@@ -1,0 +1,700 @@
+{"item_id": "item_00002", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00037", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00447", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00450", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00367", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00193", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00390", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00298", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00189", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00038", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00577", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00354", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00423", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00546", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00506", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00216", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00040", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00178", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00075", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00358", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00047", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00183", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00653", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00539", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00414", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00552", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00398", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00457", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00080", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00574", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00082", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00153", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00034", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00182", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00435", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00023", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00311", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00137", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00030", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00166", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00490", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00240", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00084", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00611", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00187", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00085", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00301", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00616", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00003", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00167", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00254", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00296", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00606", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00250", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00470", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00503", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00438", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00696", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00057", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00104", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00148", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00141", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00016", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00662", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00360", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00654", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00145", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00322", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00232", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00396", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00608", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00210", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00069", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00548", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00703", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00163", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00713", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00642", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00431", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00362", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00195", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00422", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00058", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00600", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00308", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00139", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00115", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00476", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00107", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00472", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00656", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00538", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00332", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00542", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00049", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00176", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00475", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00380", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00682", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00236", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00364", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00072", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00639", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00564", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00302", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00659", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00177", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00705", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00516", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00405", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00046", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00326", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00593", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00324", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00340", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00217", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00660", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00119", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00601", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00337", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00481", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00543", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00100", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00607", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00368", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00584", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00169", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00278", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00518", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00468", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00088", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00233", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00256", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00309", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00466", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00719", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00377", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00241", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00641", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00698", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00428", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00712", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00389", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00077", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00116", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00495", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00307", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00093", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00157", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00194", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00679", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00103", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00579", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00711", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00511", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00665", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00497", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00530", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00411", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00372", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00313", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00565", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00051", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00715", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00551", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00657", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00561", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00280", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00701", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00005", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00695", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00446", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00165", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00315", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00568", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00202", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00050", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00164", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00123", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00067", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00348", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00469", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00287", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00234", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00409", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00589", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00329", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00627", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00314", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00484", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00204", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00514", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00245", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00356", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00222", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00312", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00288", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00043", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00132", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00017", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00019", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00292", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00048", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00321", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00323", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00617", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00528", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00186", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00365", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00563", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00215", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00113", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00242", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00645", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00526", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00248", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00459", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00582", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00664", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00692", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00070", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00630", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00540", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00505", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00570", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00655", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00196", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00207", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00130", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00590", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00091", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00305", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00460", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00500", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00403", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00534", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00523", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00122", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00127", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00537", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00417", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00688", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00230", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00683", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00392", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00613", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00257", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00031", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00025", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00138", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00018", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00680", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00576", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00603", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00154", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00412", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00672", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00327", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00473", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00225", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00056", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00249", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00068", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00032", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00702", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00226", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00585", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00105", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00144", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00102", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00083", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00635", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00485", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00272", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00494", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00029", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00419", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00235", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00109", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00101", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00184", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00239", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00646", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00264", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00381", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00714", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00624", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00175", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00275", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00290", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00351", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00382", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00420", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00151", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00205", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00668", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00689", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00352", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00293", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00143", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00086", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00370", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00586", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00644", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00465", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00687", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00124", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00092", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00161", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00026", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00461", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00131", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00042", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00588", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00529", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00591", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00498", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00197", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00185", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00220", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00636", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00479", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00270", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00599", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00612", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00413", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00099", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00291", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00079", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00626", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00474", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00076", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00190", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00063", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00271", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00229", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00522", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00652", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00393", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00573", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00430", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00318", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00133", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00325", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00501", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00433", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00000", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00231", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00316", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00027", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00277", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00188", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00252", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00146", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00369", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00244", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00304", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00199", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00449", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00179", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00445", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00021", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00061", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00158", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00129", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00247", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00716", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00211", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00022", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00384", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00140", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00442", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00555", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00544", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00619", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00213", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00610", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00477", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00395", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00171", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00274", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00020", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00118", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00152", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00294", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00621", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00509", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00464", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00709", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00285", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00512", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00453", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00710", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00634", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00320", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00663", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00112", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00671", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00353", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00397", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00421", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00208", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00267", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00677", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00259", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00513", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00181", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00383", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00532", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00357", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00531", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00346", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00557", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00632", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00609", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00483", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00571", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00251", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "PAYMENT_RETRY": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00432", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00401", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "PAYMENT_RETRY": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01132", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01078", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00940", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01172", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00930", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01193", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00782", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00925", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00914", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01168", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01181", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00980", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00771", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00820", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00818", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00789", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00860", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00946", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00729", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01149", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00759", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00767", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01023", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00883", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00901", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00982", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00851", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01045", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00819", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00967", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00731", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01007", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01187", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00865", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00793", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01134", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00727", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00736", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00743", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01061", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01126", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00745", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01129", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00920", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01087", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00873", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00902", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00922", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01049", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01155", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00915", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00781", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00893", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00924", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00979", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01107", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00817", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00917", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00935", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00903", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01013", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00812", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00772", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00962", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01059", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01131", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01082", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00921", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01004", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00909", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01051", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00970", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00834", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01008", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00928", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00836", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01002", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00981", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00908", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00987", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00788", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01114", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01190", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00890", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01047", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00823", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00872", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01083", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00952", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01101", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01118", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00742", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01036", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01015", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00748", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01052", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00998", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00876", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00950", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00913", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00974", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00968", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01117", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00838", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00758", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01119", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00892", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00882", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01199", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00888", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00802", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00874", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00738", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00753", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00870", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00845", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00739", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01121", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01113", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01139", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00832", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00824", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01071", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01046", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01079", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01070", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00724", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01016", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00737", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00741", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00932", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00766", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00747", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00936", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00969", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00828", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01068", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00995", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00822", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00829", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01175", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00779", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00849", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01112", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00761", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01054", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00963", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01077", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00954", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00941", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01141", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01160", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00961", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00750", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01143", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00973", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00853", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00863", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01136", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01076", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00937", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00906", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00905", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00800", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00985", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01038", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01124", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00871", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01115", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00934", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00878", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01182", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00907", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00956", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00869", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00996", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01024", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01130", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00796", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00989", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01150", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00955", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00846", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01031", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01055", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01089", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00749", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01176", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00764", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01028", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00786", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00919", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01064", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00839", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01135", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00840", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00735", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00904", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00757", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01032", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00948", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00811", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00797", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00971", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00777", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01184", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01012", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00864", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00787", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01133", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00933", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01140", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00984", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01146", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01072", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01169", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00843", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01178", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00858", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01025", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00976", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01009", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00774", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01157", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00816", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00943", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01197", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00951", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00889", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01017", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01066", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00794", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01161", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01075", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01198", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00754", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01039", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00918", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01125", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01084", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01171", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01123", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01164", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00809", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01085", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01166", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00807", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01094", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01095", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00744", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00899", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00825", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00841", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01186", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01144", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00926", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01162", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00725", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00806", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00866", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01041", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00752", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00831", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00877", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00850", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00783", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00726", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00848", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00833", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01057", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_00773", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01092", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00792", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01019", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01185", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_01194", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 1}}
+{"item_id": "item_01145", "outcome_by_intervention": {"HUMAN_ESCALATION": 0, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00966", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00790", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 0}}
+{"item_id": "item_00929", "outcome_by_intervention": {"HUMAN_ESCALATION": 1, "WHATSAPP_REMINDER": 1}}

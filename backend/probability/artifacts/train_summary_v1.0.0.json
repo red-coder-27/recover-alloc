@@ -1,0 +1,26 @@
+{
+  "model_version": "v1.0.0",
+  "interventions": {
+    "PAYMENT_RETRY": {
+      "n_train_rows": 420,
+      "n_positive": 227,
+      "n_negative": 193,
+      "cv_folds_used": 5,
+      "artifact_path": "/home/claude/recover-alloc/backend/probability/artifacts/model_PAYMENT_RETRY_v1.0.0.joblib"
+    },
+    "WHATSAPP_REMINDER": {
+      "n_train_rows": 700,
+      "n_positive": 301,
+      "n_negative": 399,
+      "cv_folds_used": 5,
+      "artifact_path": "/home/claude/recover-alloc/backend/probability/artifacts/model_WHATSAPP_REMINDER_v1.0.0.joblib"
+    },
+    "HUMAN_ESCALATION": {
+      "n_train_rows": 700,
+      "n_positive": 333,
+      "n_negative": 367,
+      "cv_folds_used": 5,
+      "artifact_path": "/home/claude/recover-alloc/backend/probability/artifacts/model_HUMAN_ESCALATION_v1.0.0.joblib"
+    }
+  }
+}

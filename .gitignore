@@ -1,0 +1,35 @@
+# Python / FastAPI Runtime Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+
+# Databases & Runtime Logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

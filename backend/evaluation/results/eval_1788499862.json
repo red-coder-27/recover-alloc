@@ -1,0 +1,121 @@
+{
+  "run_id": "eval_1788499862",
+  "config": {
+    "n_items": 100,
+    "n_seeds": 20,
+    "resources_budget": {
+      "retry_slots": 35,
+      "whatsapp_quota": 50,
+      "human_hours": 8
+    },
+    "model_version": "v1.0.0",
+    "policy_version": "v1.0.0",
+    "timestamp": 1788499864.4997752
+  },
+  "strategies": {
+    "no_action": {
+      "status": "OK",
+      "expected_objective": 0.0,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.006686999995508813,
+      "n_items_served": 0,
+      "n_items_unserved": 100,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 0.0,
+        "median": 0.0,
+        "stddev": 0.0,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 0,
+        "whatsapp_quota": 0,
+        "human_hours": 0
+      }
+    },
+    "random_under_budget": {
+      "status": "OK",
+      "expected_objective": 279213.0206009882,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.295282999999813,
+      "n_items_served": 93,
+      "n_items_unserved": 7,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 138861.658,
+        "median": 129284.4,
+        "stddev": 34443.13660073216,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 50,
+        "human_hours": 8
+      }
+    },
+    "blind_retry": {
+      "status": "OK",
+      "expected_objective": 78485.91438791131,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.08524400000453625,
+      "n_items_served": 35,
+      "n_items_unserved": 65,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 79478.46100000001,
+        "median": 75617.41,
+        "stddev": 15280.53241264679,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 0,
+        "human_hours": 0
+      }
+    },
+    "static_rules": {
+      "status": "OK",
+      "expected_objective": 101987.36113460975,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.2747760000119115,
+      "n_items_served": 51,
+      "n_items_unserved": 49,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 91972.6115,
+        "median": 87819.45,
+        "stddev": 15350.175726131369,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 8,
+        "human_hours": 8
+      }
+    },
+    "llm_only": {
+      "status": "UNAVAILABLE",
+      "reason": "LLM diagnosis path is not executable in this environment (anthropic SDK installed: False, ANTHROPIC_API_KEY configured: False); running this strategy would only measure the fallback path, not real LLM-only allocation behavior.",
+      "dependency": "anthropic (package + ANTHROPIC_API_KEY)",
+      "command": "pip install anthropic && export ANTHROPIC_API_KEY=..."
+    },
+    "recover_alloc": {
+      "status": "UNAVAILABLE",
+      "reason": "RECOVER-ALLOC requires the real CP-SAT solver for final evaluation (the Phase 6 naive-sort substitution is explicitly not carried into final evaluation per instructions). OR-Tools is not installed in this build sandbox (confirmed via direct ModuleNotFoundError, not assumed).",
+      "dependency": "ortools",
+      "command": "pip install ortools"
+    },
+    "oracle": {
+      "status": "UNAVAILABLE",
+      "reason": "Oracle requires the real CP-SAT solver for final evaluation (same formulation as RECOVER-ALLOC, per Part R). OR-Tools is not installed in this build sandbox.",
+      "dependency": "ortools",
+      "command": "pip install ortools"
+    }
+  },
+  "diagnosis_accuracy": {
+    "rule_table": 0.12,
+    "llm": "LLM EXECUTION UNAVAILABLE - anthropic SDK/API key not configured in this environment",
+    "reference_label_note": "Scored against an INDEPENDENT hidden true_diagnostic_class (simulation/ground_truth.py), not derived from the rule diagnoser's own bucketing logic - fixes the tautological reference-label issue identified after Phase 6."
+  },
+  "oracle_capture_percent": "UNAVAILABLE - recover_alloc and/or oracle did not run (see strategies section)"
+}

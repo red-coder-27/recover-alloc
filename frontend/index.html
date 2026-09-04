@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RECOVER-ALLOC — Revenue Operations Allocation Control Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="top-header">
+      <div class="brand-section">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>RECOVER-ALLOC</h1>
+          <span class="sub-tag">Constrained Multi-Resource Allocation Engine</span>
+        </div>
+      </div>
+
+      <div class="system-status-pills">
+        <div class="status-pill green">
+          <span class="dot"></span>
+          <span>OR-Tools CP-SAT Ready</span>
+        </div>
+        <div class="status-pill blue">
+          <span class="dot"></span>
+          <span>Isotonic Model v1.0.0</span>
+        </div>
+        <div class="status-pill purple">
+          <span class="dot"></span>
+          <span>Policy Engine Active</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="allocation">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-2-2-4 4"/></svg>
+        Revenue Allocation
+      </button>
+      <button class="tab-btn" data-tab="intelligence">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        Allocation Intelligence (MCMKP Proof)
+      </button>
+      <button class="tab-btn" data-tab="audit">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        Audit Trail & Idempotency
+      </button>
+      <button class="tab-btn" data-tab="benchmarks">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        Evaluation Benchmark & Calibration
+      </button>
+      <button class="tab-btn" data-tab="architecture">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="18" y1="10" x2="18" y2="14"/></svg>
+        Architecture Pipeline
+      </button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- TAB 1: REVENUE ALLOCATION CONTROL CENTER -->
+      <section id="tab-allocation" class="tab-pane active">
+        <!-- KPI Cards Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <span class="kpi-label">TOTAL REVENUE AT RISK</span>
+            <div class="kpi-value" id="kpi-total-risk">₹0.00</div>
+            <span class="kpi-sub">100 Recoverable Accounts Batch</span>
+          </div>
+
+          <div class="kpi-card highlight">
+            <span class="kpi-label">MODEL-PREDICTED NET RECOVERY</span>
+            <div class="kpi-value green" id="kpi-expected-obj">₹0.00</div>
+            <span class="kpi-sub">CP-SAT Allocation Objective (p_hat)</span>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">CAPACITY SERVED</span>
+            <div class="kpi-value" id="kpi-served">0 / 100</div>
+            <span class="kpi-sub" id="kpi-unserved">0 Unserved</span>
+          </div>
+
+          <div class="kpi-card">
+            <span class="kpi-label">POLICY BLOCKS</span>
+            <div class="kpi-value warning" id="kpi-blocks">0</div>
+            <span class="kpi-sub">Enforced by Deterministic Policy</span>
+          </div>
+        </div>
+
+        <!-- Resource Budgets Panel -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>RECOVERY RESOURCE CAPACITY UTILIZATION</h3>
+            <div class="controls-group">
+              <button id="btn-replan" class="btn primary">Run MCMKP Allocation Plan</button>
+            </div>
+          </div>
+          <div class="resource-bars-grid">
+            <div class="resource-card">
+              <div class="res-info">
+                <span class="res-name">Payment Retry Slots</span>
+                <span class="res-val" id="res-retry-text">0 / 35</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-fill" id="res-retry-fill" style="width: 0%"></div></div>
+              <span class="res-cost">Cost: ₹2.00 / slot</span>
+            </div>
+
+            <div class="resource-card">
+              <div class="res-info">
+                <span class="res-name">WhatsApp Reminders Quota</span>
+                <span class="res-val" id="res-wa-text">0 / 50</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-fill wa" id="res-wa-fill" style="width: 0%"></div></div>
+              <span class="res-cost">Cost: ₹0.50 / message</span>
+            </div>
+
+            <div class="resource-card">
+              <div class="res-info">
+                <span class="res-name">Human Escalation Hours</span>
+                <span class="res-val" id="res-human-text">0 / 8.0 hrs</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-fill human" id="res-human-fill" style="width: 0%"></div></div>
+              <span class="res-cost">Cost: ₹250.00 / hour</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Allocation Table Box -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <div>
+              <h3>ACCOUNT RECOVERY ALLOCATION DECISION TABLE</h3>
+              <p class="pipeline-note" style="color: #9ca3af; font-size: 0.78rem; margin-top: 4px;">
+                ℹ️ <strong>Pipeline Note:</strong> Ranking reflects economic opportunity prior to policy authorization. 
+                <span class="badge block" style="font-size:0.7rem; padding: 2px 6px;">BLOCK</span> = Prohibited by deterministic policy. 
+                <span class="badge unserved" style="font-size:0.7rem; padding: 2px 6px;">UNSERVED</span> = Actionable but unallocated due to capacity limits.
+              </p>
+            </div>
+            <span class="badge info">Sorted by Expected Net Value Priority</span>
+          </div>
+          <div class="table-container">
+            <table class="data-table" id="table-allocation">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Account ID</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Failure Reason</th>
+                  <th>Days Overdue</th>
+                  <th>Recommended Intervention</th>
+                  <th>p(Recovery)</th>
+                  <th>Expected Net Value</th>
+                  <th>Policy Gate</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-allocation">
+                <tr><td colspan="11" class="loading-cell">Loading allocation plan...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: ALLOCATION INTELLIGENCE (WHY MCMKP MATTERS) -->
+      <section id="tab-intelligence" class="tab-pane">
+        <div class="hero-callout">
+          <h2>WHY CONSTRAINED MULTI-RESOURCE OPTIMIZATION MATTERS</h2>
+          <p>Naive greedy sorting evaluates items in isolation, starving non-top-ranked accounts of multi-resource fallbacks. RECOVER-ALLOC solves the full Multidimensional Multiple-Choice Knapsack Problem (MCMKP) using CP-SAT integer programming to globally maximize expected net recovery.</p>
+        </div>
+
+        <!-- Counterexample Card -->
+        <div class="counterexample-card">
+          <div class="ce-header">
+            <span class="ce-tag">VERIFIED MATHEMATICAL PROOF</span>
+            <h3>Resource Competition Counterexample (5 Items, Scarce WhatsApp Quota)</h3>
+          </div>
+          <div class="ce-metrics-grid">
+            <div class="ce-metric">
+              <span class="lbl">NAIVE GREEDY OBJECTIVE</span>
+              <span class="val" id="ce-naive-val">₹24,845.50</span>
+            </div>
+            <div class="ce-metric highlight">
+              <span class="lbl">MCMKP OPTIMAL OBJECTIVE</span>
+              <span class="val green" id="ce-optimal-val">₹27,644.30</span>
+            </div>
+            <div class="ce-metric">
+              <span class="lbl">INCREMENTAL GAIN</span>
+              <span class="val green" id="ce-gain-val">+₹2,798.80</span>
+            </div>
+            <div class="ce-metric">
+              <span class="lbl">OPTIMIZATION ADVANTAGE</span>
+              <span class="val green" id="ce-pct-val">+11.26%</span>
+            </div>
+          </div>
+          <div class="ce-explanation" id="ce-explanation-text">
+            Loading counterexample proof details...
+          </div>
+        </div>
+
+        <!-- Live Side-by-Side Comparison -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>LIVE BATCH COMPARISON: NAIVE GREEDY VS RECOVER-ALLOC (100 ITEMS)</h3>
+          </div>
+          <div class="side-by-side-grid">
+            <div class="comparison-col naive">
+              <h4>Naive Value-Greedy Sort</h4>
+              <div class="col-stat">Expected Objective: <strong id="comp-naive-obj">₹0.00</strong></div>
+              <p class="col-desc">Ranks (item, intervention) pairs globally by value and picks greedily. Suffers when high-ranked items lock out scarce resources from accounts with no alternative fallback.</p>
+            </div>
+            <div class="comparison-col optimal">
+              <h4>RECOVER-ALLOC (CP-SAT ILP)</h4>
+              <div class="col-stat">Expected Objective: <strong id="comp-optimal-obj" class="green">₹0.00</strong></div>
+              <p class="col-desc">Solves full 0-1 Integer Linear Program. Reallocates flexible items to second-best options (e.g. Retry) to preserve scarce WhatsApp quota for constrained accounts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: AUDIT TRAIL & IDEMPOTENCY -->
+      <section id="tab-audit" class="tab-pane">
+        <!-- Failure Scenarios Demo Bar -->
+        <div class="panel-box warning-border">
+          <div class="panel-header">
+            <h3>CONTROLLED FAILURE & SAFETY DEMO TOGGLES</h3>
+            <span class="badge warning">Execute Controlled Edge Cases</span>
+          </div>
+          <div class="demo-buttons-group">
+            <button class="btn demo-btn" id="btn-demo-duplicate">Duplicate Execution → Block</button>
+            <button class="btn demo-btn" id="btn-demo-budget">Budget Exhaustion → Stop</button>
+            <button class="btn demo-btn" id="btn-demo-confidence">Low Confidence → Escalate</button>
+            <button class="btn demo-btn" id="btn-demo-solver">Solver Failure → Safe Stop</button>
+            <button class="btn demo-btn" id="btn-demo-razorpay">Razorpay Test Payment Link</button>
+          </div>
+        </div>
+
+        <!-- Audit Log Table -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>SYSTEM AUDIT TRAIL (APPEND-ONLY LOG)</h3>
+            <button class="btn secondary" id="btn-refresh-audit">Refresh Audit Log</button>
+          </div>
+          <div class="table-container">
+            <table class="data-table" id="table-audit">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Event Type</th>
+                  <th>Run ID</th>
+                  <th>Account ID</th>
+                  <th>Result</th>
+                  <th>Reason</th>
+                  <th>Payload Details</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-audit">
+                <tr><td colspan="7" class="loading-cell">Loading audit log...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- DB Executions Table -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>DATABASE EXECUTIONS TABLE (DB UNIQUE KEY ENFORCED)</h3>
+          </div>
+          <div class="table-container">
+            <table class="data-table" id="table-executions">
+              <thead>
+                <tr>
+                  <th>Execution ID</th>
+                  <th>Idempotency Key (SHA256)</th>
+                  <th>Account ID</th>
+                  <th>Intervention</th>
+                  <th>Adapter</th>
+                  <th>Status</th>
+                  <th>External Ref</th>
+                  <th>Requested At</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-executions">
+                <tr><td colspan="8" class="loading-cell">Loading executions...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: EVALUATION BENCHMARK & CALIBRATION STORY -->
+      <section id="tab-benchmarks" class="tab-pane">
+        <!-- Verified Benchmark Table -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <div>
+              <h3>FROZEN 20-SEED BENCHMARK LEADERBOARD (100 ITEMS)</h3>
+              <p class="methodology-note" style="color: #9ca3af; font-size: 0.78rem; margin-top: 4px;">
+                ℹ️ <strong>Methodology Note:</strong> All strategies use the same frozen 100-item test set, standard resource budgets, and 20 random outcome seeds. Oracle uses hidden true recovery probabilities strictly for benchmarking.
+              </p>
+            </div>
+            <span class="badge success">Verified Frozen Dataset Evaluation</span>
+          </div>
+          <div class="table-container">
+            <table class="data-table" id="table-leaderboard">
+              <thead>
+                <tr>
+                  <th>Strategy</th>
+                  <th>Status</th>
+                  <th>True Expected Objective</th>
+                  <th>Realized Recovery (20-Seed Mean)</th>
+                  <th>Realized Median</th>
+                  <th>Realized StdDev</th>
+                  <th>Realized Ratio vs Oracle</th>
+                  <th>RECOVER-ALLOC Advantage</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-leaderboard">
+                <tr><td colspan="8" class="loading-cell">Loading benchmark results...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Calibration Story Box -->
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>DECISION-AWARE PROBABILITY CALIBRATION STORY</h3>
+          </div>
+          <div class="calibration-story-content">
+            <p><strong>The "Optimizer's Curse" Challenge:</strong> When an uncalibrated ML model with prediction error is passed into a maximization solver, the optimizer selectively picks items with positive prediction noise, leading to an artificially inflated expected objective (₹306k predicted vs ₹178k true expected).</p>
+            <div class="calibration-metrics-grid">
+              <div class="cal-card">
+                <span class="title">Raw HGB Model</span>
+                <span class="metric-val danger">+9.80% Selection Optimism</span>
+                <span class="desc">True Portfolio Obj: ₹172,308.17</span>
+              </div>
+              <div class="cal-card highlight">
+                <span class="title">Isotonic Calibrated Model (v1.0.0)</span>
+                <span class="metric-val green">+0.68% Selection Bias</span>
+                <span class="desc">True Portfolio Obj: ₹178,334.84 (+₹6,026.67 Value Gain!)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: SYSTEM ARCHITECTURE & POLICY PIPELINE -->
+      <section id="tab-architecture" class="tab-pane">
+        <div class="panel-box">
+          <div class="panel-header">
+            <h3>RECOVER-ALLOC SYSTEM ARCHITECTURE PIPELINE</h3>
+          </div>
+          
+          <div class="authority-banner" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 8px; padding: 12px; margin-bottom: 24px; text-align: center; font-weight: 600; color: #60a5fa;">
+            <span class="badge info" style="margin-right:8px; font-size: 0.75rem;">CORE SAFETY GUARANTEE</span> AI recommends → Optimization allocates → Policy authorizes → Executor acts
+          </div>
+
+          <div class="architecture-flow">
+            <div class="arch-step">
+              <div class="arch-badge">STEP 1</div>
+              <h4>Evidence Collection</h4>
+              <p>Observable merchant features, overdue days, attempts, contact counts, failure codes.</p>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-step">
+              <div class="arch-badge">STEP 2</div>
+              <h4>Evidence Diagnosis</h4>
+              <p>Structured failure classification, confidence scoring, and intervention candidates. LLM output is schema-validated and has zero execution authority.</p>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-step">
+              <div class="arch-badge">STEP 3</div>
+              <h4>Probability Model</h4>
+              <p>Isotonic calibrated HistGradientBoosting model estimates p(recovery).</p>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-step highlight">
+              <div class="arch-badge">STEP 4</div>
+              <h4>MCMKP Optimizer</h4>
+              <p>OR-Tools CP-SAT ILP maximizes net recovery under multi-resource budgets.</p>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-step">
+              <div class="arch-badge">STEP 5</div>
+              <h4>Policy Gate</h4>
+              <p>100% deterministic rule chain (Fraud, Floor, Consent, Frequency, Fatigue).</p>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-step">
+              <div class="arch-badge">STEP 6</div>
+              <h4>Idempotent Execution + Verification</h4>
+              <p>DB idempotency constraint prevents duplicate execution; dispatches to simulator / Razorpay and verifies the outcome.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Execution Result Modal -->
+  <div class="modal-backdrop" id="modal-execution">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-title">Execution Result</h3>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        Loading execution output...
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

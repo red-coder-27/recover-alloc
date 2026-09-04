@@ -1,0 +1,36 @@
+{
+  "rule_table": {
+    "diagnosis_source": "rule_table",
+    "n_items": 60,
+    "failure_class_accuracy": 1.0,
+    "unclear_rate": 0.0,
+    "mean_confidence": 0.7100000000000001,
+    "policy_allow_count": 32,
+    "policy_block_count": 3,
+    "policy_escalate_count": 0,
+    "policy_modify_count": 0,
+    "policy_violation_count": 0,
+    "expected_net_recovery": 71759.50491256526,
+    "actual_simulated_net_recovery": 138376.92999999996,
+    "execution_count": 32,
+    "escalation_count": 0,
+    "wall_clock_seconds": 0.9041608469999858
+  },
+  "llm": {
+    "diagnosis_source": "llm",
+    "n_items": 60,
+    "failure_class_accuracy": 0.0,
+    "unclear_rate": 1.0,
+    "mean_confidence": 0.0,
+    "policy_allow_count": 0,
+    "policy_block_count": 3,
+    "policy_escalate_count": 32,
+    "policy_modify_count": 0,
+    "policy_violation_count": 0,
+    "expected_net_recovery": 0.0,
+    "actual_simulated_net_recovery": 0.0,
+    "execution_count": 0,
+    "escalation_count": 32,
+    "wall_clock_seconds": 1.0174384489999966
+  }
+}

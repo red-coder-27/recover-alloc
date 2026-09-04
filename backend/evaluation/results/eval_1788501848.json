@@ -1,0 +1,149 @@
+{
+  "run_id": "eval_1788501848",
+  "config": {
+    "n_items": 100,
+    "n_seeds": 20,
+    "resources_budget": {
+      "retry_slots": 35,
+      "whatsapp_quota": 50,
+      "human_hours": 8
+    },
+    "model_version": "v1.0.0",
+    "policy_version": "v1.0.0",
+    "timestamp": 1788501851.6943245
+  },
+  "strategies": {
+    "no_action": {
+      "status": "OK",
+      "expected_objective": 0.0,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.016200006939470768,
+      "n_items_served": 0,
+      "n_items_unserved": 100,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 0.0,
+        "median": 0.0,
+        "stddev": 0.0,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 0,
+        "whatsapp_quota": 0,
+        "human_hours": 0
+      }
+    },
+    "random_under_budget": {
+      "status": "OK",
+      "expected_objective": 279213.0206009882,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.8233999833464622,
+      "n_items_served": 93,
+      "n_items_unserved": 7,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 138861.658,
+        "median": 129284.4,
+        "stddev": 34443.13660073216,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 50,
+        "human_hours": 8
+      }
+    },
+    "blind_retry": {
+      "status": "OK",
+      "expected_objective": 78485.91438791131,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.21359999664127827,
+      "n_items_served": 35,
+      "n_items_unserved": 65,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 79478.46100000001,
+        "median": 75617.41,
+        "stddev": 15280.53241264679,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 0,
+        "human_hours": 0
+      }
+    },
+    "static_rules": {
+      "status": "OK",
+      "expected_objective": 101987.36113460975,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 0.6500999443233013,
+      "n_items_served": 51,
+      "n_items_unserved": 49,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 91972.6115,
+        "median": 87819.45,
+        "stddev": 15350.175726131369,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 8,
+        "human_hours": 8
+      }
+    },
+    "llm_only": {
+      "status": "UNAVAILABLE",
+      "reason": "LLM diagnosis path is not executable in this environment (anthropic SDK installed: True, ANTHROPIC_API_KEY configured: False); running this strategy would only measure the fallback path, not real LLM-only allocation behavior.",
+      "dependency": "anthropic (package + ANTHROPIC_API_KEY)",
+      "command": "pip install anthropic && export ANTHROPIC_API_KEY=..."
+    },
+    "recover_alloc": {
+      "status": "OK",
+      "expected_objective": 306105.59705,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 108.39279997162521,
+      "n_items_served": 89,
+      "n_items_unserved": 11,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 174817.9875,
+        "median": 178408.57999999996,
+        "stddev": 28718.828257855643,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 50,
+        "human_hours": 4
+      }
+    },
+    "oracle": {
+      "status": "OK",
+      "expected_objective": 189930.34526,
+      "solver_status": "OPTIMAL",
+      "solve_time_ms": 127.6657999260351,
+      "n_items_served": 92,
+      "n_items_unserved": 8,
+      "feasibility_violations": [],
+      "realized_net_recovered": {
+        "mean": 192135.66449999998,
+        "median": 186955.90999999997,
+        "stddev": 35934.85150485952,
+        "n_seeds": 20
+      },
+      "realized_resource_usage_seed0": {
+        "retry_slots": 35,
+        "whatsapp_quota": 50,
+        "human_hours": 7
+      }
+    }
+  },
+  "diagnosis_accuracy": {
+    "rule_table": 0.12,
+    "llm": "LLM EXECUTION UNAVAILABLE - anthropic SDK/API key not configured in this environment",
+    "reference_label_note": "Scored against an INDEPENDENT hidden true_diagnostic_class (simulation/ground_truth.py), not derived from the rule diagnoser's own bucketing logic - fixes the tautological reference-label issue identified after Phase 6."
+  },
+  "oracle_capture_percent": 161.17
+}
