@@ -1,32 +1,21 @@
 # Execution State Machine — Phase 5
 
-```
-                    CLAIMED   <-- atomically written by the DB
-                       |          UNIQUE(idempotency_key) INSERT,
-                       |          BEFORE any external call
-          adapter.execute() attempted
-                       |
-        +--------------+-------------------+
-        |              |                   |
-  clean, confirmed  ambiguous result   clean, confirmed
-  non-side-effecting (timeout,          side-effecting
-  failure (e.g.       connection        dispatch occurred
-  auth error before   dropped mid-      (adapter call
-  any network call)   call, etc.)       returned SOMETHING)
-        |                  |                   |
-        v                  v                   v
-  DISPATCH_FAILED    UNCERTAIN            DISPATCHED
-  (safe to retry     (NEVER auto-              |
-   under a NEW        retried --          verification step
-   idempotency         requires human           |
-   key/run)            review)          +-------+-------+
-                                         |               |
-                                         v               v
-                                  VERIFIED_SUCCESS  VERIFIED_FAILED
+```mermaid
+flowchart TD
+    C["CLAIMED<br/>DB ownership acquired<br/>UNIQUE(idempotency_key)<br/>before external call"]
 
-  idempotency claim loses --> DUPLICATE_EXECUTION_BLOCKED
-     (no second DB row created for this process; the existing execution record
-      is returned; this process performs no state transition and makes no external call)
+    C --> A["adapter.execute() attempted"]
+
+    A --> F["DISPATCH_FAILED<br/>Confirmed non-side-effecting failure<br/><br/>Safe to retry as a new execution attempt"]
+
+    A --> U["UNCERTAIN<br/>External outcome unknown<br/><br/>NEVER auto-retry<br/>Human reconciliation required"]
+
+    A --> D["DISPATCHED<br/>Side-effecting / accepted result"]
+
+    D --> V1["VERIFIED_SUCCESS<br/>Terminal"]
+    D --> V2["VERIFIED_FAILED<br/>Terminal"]
+
+    C -. "claim lost" .-> X["DUPLICATE_EXECUTION_BLOCKED<br/><br/>Existing execution record returned<br/>No second DB row<br/>No external call"]
 ```
 
 ## State Semantics
