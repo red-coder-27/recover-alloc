@@ -1,22 +1,91 @@
-# RECOVER-ALLOC — Intelligent Revenue Operations & Recovery Allocation System
+# RECOVER-ALLOC
 
-> **Decision-Aware Multi-Choice Multi-Dimensional Knapsack (MCMKP) Engine for Merchant Revenue Recovery**  
-> *Razorpay AI Buildathon 2026 — Revenue Recovery Track Submission*
+> **Don't just retry failed payments. Allocate recovery capacity intelligently.**<br/>
+> *An AI-assisted revenue recovery decision engine that chooses which accounts to recover, which intervention to use, and when to stop under scarce retry, messaging, and human-operation capacity.*
+
+"RECOVER-ALLOC treats revenue recovery as a resource-allocation problem, not a retry problem."
 
 ---
 
-## Executive Summary & Business Problem
+| System Layer | Implementation Technology | Operational Role |
+| :--- | :--- | :--- |
+| **Optimization** | **Google OR-Tools CP-SAT** | Chooses the best feasible recovery portfolio |
+| **Prediction** | **HistGradientBoosting + Isotonic Calibration** | Estimates intervention-conditioned recovery probability |
+| **AI Diagnosis** | **Anthropic Claude (LLM)** | Extracts evidence from unstructured failure context |
+| **Safety Gate** | **Deterministic Policy Engine** | Blocks actions that violate merchant or operational rules |
+| **Execution** | **Idempotent State Machine** | Prevents duplicate internal execution claims |
+| **Evaluation** | **Frozen 20-Seed Simulator Benchmark** | Measures economic performance on a frozen benchmark |
 
-When merchants face failed payments, overdue invoices, or subscription churn, recovery operations depend on strictly bounded capacity:
-- **Payment Retry API Limits**: Constrained daily transaction retries.
-- **Messaging Quotas**: Bounded WhatsApp/SMS communication limits.
-- **Human Operations Hours**: Limited manual escalation agent hours.
+---
 
-### Why Naive Greedy Allocation Fails
-Standard recovery systems sort accounts greedily by monetary amount or raw recovery probability and assign the highest-cost intervention to top-ranked items. This creates severe **resource starvation**: high-value accounts hog scarce multi-resource channels (like WhatsApp or Human Escalation), locking out accounts that have zero alternative fallback options. The result is depleted budgets, contact fatigue, policy violations, and unrecovered revenue.
+## RECOVER-ALLOC in 60 Seconds
 
-### The RECOVER-ALLOC Solution
-**RECOVER-ALLOC** formulates revenue recovery as a **Multi-Choice Multi-Dimensional Knapsack Problem (MCMKP)** solved via **Google OR-Tools CP-SAT**. It globally maximizes expected net recovery across all accounts and resource constraints simultaneously, guided by a decision-aware, isotonic-calibrated probability model and enforced by a 100% deterministic policy engine.
+- **The Core Bottleneck**: Merchant payment recovery is bounded by strict capacity limits—API retry rate limits, WhatsApp quotas, and manual human operations hours.
+- **Why Naive Tools Fail**: Generic recovery tools rank accounts greedily by monetary value or raw probability. High-value accounts hog scarce multi-resource channels (like WhatsApp), starving accounts with zero alternative fallbacks.
+- **The Engine**: RECOVER-ALLOC formulates recovery as a **Multi-Choice Multi-Dimensional Knapsack Problem (MCMKP)** solved via **Google OR-Tools CP-SAT**.
+- **AI Authority Boundary**: AI proposes diagnostic evidence and probability estimates, but **deterministic policy and execution controls retain final authority over every dispatch**.
+- **Safety First**: Database-backed idempotency blocks duplicate internal execution claims; external uncertainty is surfaced explicitly rather than retried blindly.
+
+```mermaid
+flowchart LR
+    A[Revenue at Risk] --> B[Evidence]
+    B --> C[Recovery Probability]
+    C --> D[MCMKP Allocation]
+    D --> E[Policy Gate]
+    E --> F[Approved Execution]
+    F --> G[Audit Trail]
+```
+
+---
+
+## The Problem & The Insight
+
+Merchants experience payment failures, subscription churn, and unpaid B2B invoices daily. However, recovery capacity is subject to explicit operational boundaries:
+- **Payment Retry API Limits**: Daily transaction attempt ceilings.
+- **Messaging Quotas**: Bounded WhatsApp/SMS communication volumes.
+- **Human Escalation Hours**: Strictly limited manual operations time.
+- **Contact Frequency Caps**: Prevention of customer harassment.
+- **Monetary Floor Limits**: Prevention of negative net recovery on low-value items.
+
+> ### The Core Insight
+> **"The recovery problem isn't 'Who is most likely to pay?'**<br/>
+> **It's 'Where should limited recovery capacity be spent?'"**
+
+When recovery resources are scarce, every intervention assigned to Account A creates an **opportunity cost** for Account B. Optimization must evaluate portfolio trade-offs globally across all resource channels simultaneously.
+
+---
+
+## Why Greedy Allocation Fails
+
+Standard recovery systems sort accounts greedily by monetary amount or predicted probability. A documented 5-item counterexample fixture demonstrates why naive greedy sort yields suboptimal revenue recovery under multi-resource constraints:
+
+| Allocator Strategy | Objective Value (INR) | Optimization Gain | Allocation Behavior |
+| :--- | :---: | :---: | :--- |
+| **Naive Value-Greedy Sort** | ₹24,845.50 | Baseline | Greedily assigns WhatsApp to top item D, starving item E which has zero fallback options |
+| **CP-SAT MCMKP Optimal** | **₹27,644.30** | **+₹2,798.80 (+11.26%)** | Reallocates flexible item D to Retry, preserving scarce WhatsApp quota for constrained item E |
+
+*Note: The table above reflects a verified optimization counterexample fixture demonstrating exact mathematical solver superiority over greedy sorting.*
+
+---
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    Items[Revenue-at-Risk Items] --> Ev[Evidence Collection]
+    Ev --> Diag[Failure Diagnosis<br/>Rule Diagnoser / LLM]
+    Diag --> Prob[Probability Model<br/>Isotonic Calibrated HGB]
+    Prob --> MCMKP[MCMKP CP-SAT Optimizer<br/>Global Resource Allocation]
+    MCMKP --> Policy{Deterministic Policy Gate<br/>Consent, Caps, Ceilings}
+
+    Policy -->|Policy Approved| Exec[Idempotent Executor<br/>Simulator / Razorpay Adapter]
+    Policy -->|Hard Policy Block| Block[BLOCK 🔒]
+    Policy -->|Low Confidence| Escalate[ESCALATE ⚠️]
+
+    Exec --> Audit[Immutable Audit Trail<br/>SQLite Event Log]
+    Block --> Audit
+    Escalate --> Audit
+```
 
 ---
 
@@ -24,98 +93,126 @@ Standard recovery systems sort accounts greedily by monetary amount or raw recov
 
 > **"AI proposes evidence. Deterministic systems decide what is allowed to happen."**
 
-```
- ┌───────────────────────────────────────────────────────────────────────────┐
- │                            AI PROPOSES EVIDENCE                           │
- ├─────────────────────────────────────────┬─────────────────────────────────┤
- │ LLM (Claude / Anthropic)                │ Machine Learning (Isotonic HGB) │
- │ • Unstructured evidence extraction      │ • Conditioned recovery prob p   │
- │ • Categorizes failure reasons           │ • Decision-aware calibration    │
- └─────────────────────────────────────────┴─────────────────────────────────┘
-                                     │
-                                     ▼
- ┌───────────────────────────────────────────────────────────────────────────┐
- │                    DETERMINISTIC SYSTEMS DECIDE EXECUTION                 │
- ├───────────────────────────────────────────────────────────────────────────┤
- │ • Policy Engine: 100% rule-based (consent, caps, retry ceilings, floor)   │
- │ • MCMKP CP-SAT Optimizer: Hard linear constraint feasibility & bounds     │
- │ • Execution & Idempotency: DB UNIQUE key prevents duplicate dispatches    │
- │ • Audit Trail: Immutable SQLite append-only event logging                 │
- └───────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph AI["AI Layer (Proposes Evidence & Estimates)"]
+        LLM["LLM (Claude / Anthropic)<br/>• Unstructured evidence extraction<br/>• Categorizes failure reasons"]
+        ML["Machine Learning (Isotonic HGB)<br/>• Conditioned recovery prob p_hat<br/>• Decision-aware calibration"]
+    end
+
+    subgraph Deterministic["Deterministic Control Layer (Final Authority)"]
+        Policy["Policy Engine<br/>• Hard rules: consent, caps, floor"]
+        Optimizer["MCMKP CP-SAT<br/>• Resource budget constraints"]
+        Executor["Idempotent Executor<br/>• DB UNIQUE key concurrency protection"]
+        Audit["Audit Trail<br/>• Immutable event log"]
+    end
+
+    LLM -->|Schema-Validated Diagnosis| Policy
+    ML -->|Calibrated Probabilities| Optimizer
+    Optimizer -->|Candidate Allocation Plan| Policy
+    Policy -->|ALLOW Actions Only| Executor
+    Executor -->|Lifecycle Events| Audit
 ```
 
-- **LLM Has ZERO Execution Authority**: The LLM output is strictly schema-validated for diagnostic classification. It cannot trigger dispatches, modify policy rules, or allocate resources.
-- **Deterministic Control Gate is Authoritative**: Operational rules and resource budgets are strictly enforced by CP-SAT and the deterministic policy engine.
+### Component Authority Matrix
+
+| Component | Operational Role | Execution Authority |
+| :--- | :--- | :---: |
+| **LLM (Claude)** | Evidence extraction & diagnostic classification | **None** |
+| **ML (Isotonic HGB)** | Recovery probability estimation ($\hat{p}$) | **None** |
+| **CP-SAT Optimizer** | Global multi-resource portfolio allocation | **Allocation Only** |
+| **Policy Engine** | Operational & compliance constraint enforcement | **Authoritative** |
+| **Idempotent Executor** | Dispatch approved recovery interventions | **Only after Policy ALLOW** |
+| **Audit Trail** | Append-only structured event logging | **None** |
+
+**Strict Safety Guarantee**: The LLM is strictly schema-validated for diagnostic categorization. It CANNOT dispatch transactions, override policy rules, modify resource budgets, or approve executions.
 
 ---
 
-## Formally Validated Economic Benchmark Results
+## Why MCMKP? (Mathematical Formulation)
 
-> **Note on Evaluation Data**: All recovery amounts below reflect **SIMULATED evaluation results** evaluated across 20 random outcome seeds on the frozen 100-item benchmark dataset (`data/test_set_frozen.jsonl`, SHA-256: `7ca70f5e32614f61d43a9a7986169c666b39b556bf21d92b759a7463fe4a06df`).
+RECOVER-ALLOC models recovery allocation as a 0-1 Integer Linear Program (ILP):
 
-### 1. Strategy Comparison (20-Seed Frozen Benchmark)
+$$\max \sum_{i=1}^{N} \sum_{j \in S_i} x_{i,j} \cdot \left( \text{amount}_i \cdot \hat{p}(\text{recovery} \mid i,j) - \text{cost}_j \right)$$
 
-| Strategy | Realized Net Recovery (20-Seed Mean) | Expected Ratio vs Oracle | Realized Ratio vs Oracle | vs Baseline |
+$$\text{Subject to:}$$
+$$\sum_{j \in S_i} x_{i,j} \le 1 \quad \forall i \in \{1, \dots, N\} \quad \text{(At most one intervention per account)}$$
+$$\sum_{i=1}^{N} \sum_{j \in S_i} x_{i,j} \cdot R_{j,k} \le B_k \quad \forall k \in \{1, \dots, K\} \quad \text{(Resource capacity budgets)}$$
+$$x_{i,j} \in \{0, 1\} \quad \forall i, j$$
+
+Where:
+- $S_i$ is the set of valid interventions for item $i$.
+- $\hat{p}(\text{recovery} \mid i,j)$ is the isotonic-calibrated recovery probability.
+- $R_{j,k}$ is the quantity of resource $k$ consumed by intervention $j$.
+- $B_k$ is the total capacity budget for resource $k$ (Retry Slots, WhatsApp Quota, Human Hours).
+
+---
+
+## Frozen Economic Benchmark
+
+> **Note on Benchmark Data**: All recovery amounts below reflect **SIMULATED evaluation results** evaluated across 20 random outcome seeds on the frozen 100-item benchmark dataset (`data/test_set_frozen.jsonl`, SHA-256: `7ca70f5e32614f61d43a9a7986169c666b39b556bf21d92b759a7463fe4a06df`).
+
+### 🏆 RECOVER-ALLOC
+
+# ₹1,74,817.99
+
+**90.99% Realized Recovery Ratio vs Oracle**
+
+> Simulated result · 20 random seeds · frozen 100-item benchmark
+
+### Strategy Comparison Table (20-Seed Frozen Benchmark)
+
+| Strategy | Realized Net Recovery (20-Seed Mean) | Expected Ratio vs Oracle | Realized Ratio vs Oracle | RECOVER-ALLOC Improvement |
 | :--- | :---: | :---: | :---: | :---: |
 | **Oracle Benchmark** | **₹1,92,135.66** | 100.00% | 100.00% | — |
-| **RECOVER-ALLOC (Isotonic)** | **₹1,74,817.99** | **93.89%** | **90.99%** | **Base** |
+| **RECOVER-ALLOC (Isotonic)** | **₹1,74,817.99** | **93.89%** | **90.99%** | — |
 | **Random Under Budget** | ₹1,38,861.66 | 74.57% | 72.27% | **+25.89%** |
 | **Static Rules** | ₹91,972.61 | 49.38% | 47.87% | **+90.07%** |
 | **Blind Retry** | ₹79,478.46 | 42.66% | 41.37% | **+120.00%** |
 | **No Action** | ₹0.00 | 0.00% | 0.00% | — |
 
-*Clarification on Oracle Benchmark*: The **Oracle Benchmark** evaluates performance using hidden true recovery probabilities under identical resource budgets. It is a simulator-ground-truth reference benchmark, NOT a theoretical maximum of real-world Razorpay revenue.
+*Oracle Benchmark Definition*: The **Oracle Benchmark** evaluates performance using hidden true recovery probabilities under identical resource budgets. It serves as a simulator-ground-truth reference benchmark, NOT a theoretical maximum of real-world Razorpay revenue.
+
+The important result is not that RECOVER-ALLOC predicts better accounts. It is that calibrated predictions become materially more valuable when converted into globally feasible portfolio decisions under competing resource constraints.
 
 ---
 
-### 2. Verified Mathematical Optimization Counterexample
+## Calibration & The Optimizer's Curse
 
-A documented 5-item counterexample fixture demonstrates why naive sorting fails under multi-resource competition:
+When uncalibrated ML predictions are passed into a maximization solver, the optimizer selectively picks over-predicted items (**Optimizer's Curse**). Isotonic calibration dramatically reduces this selection bias at the portfolio level:
 
-```
-Naive Value-Greedy Sort: ₹24,845.50
-CP-SAT MCMKP Optimal   : ₹27,644.30
-Net Optimization Gain  : +₹2,798.80 (+11.26%)
-```
-*CP-SAT solver matches exact brute-force optimum across 100 / 100 randomized test instances with 0 feasibility violations.*
-
----
-
-### 3. Decision-Aware Probability Calibration & Optimizer's Curse
-
-When uncalibrated probabilities are passed to an optimization solver, the solver selectively picks over-predicted items (**Optimizer's Curse**). Isotonic calibration eliminates this tail bias:
-
-| Model | Selected Portfolio $\hat{p}$ | Selected Portfolio $p_{\text{true}}$ | Selection Bias |
+| Model Version | Selected Portfolio $\hat{p}$ | Selected Portfolio $p_{\text{true}}$ | Selection Bias |
 | :--- | :---: | :---: | :---: |
 | **Raw Uncalibrated HGB** | 67.10% | 39.50% | **+27.60 pp** |
-| **Isotonic Calibrated Model** | 40.18% | 39.50% | **+0.68 pp** |
+| **Isotonic Calibrated Model (v1.0.0)** | 40.18% | 39.50% | **+0.68 pp** |
 
 - **Raw HGB**: Suffers from **+27.60 percentage points** of selection optimism bias ($\hat{p} = 67.10\%$ vs $p_{\text{true}} = 39.50\%$).
-- **Isotonic Model**: Reduces bias to **+0.68 pp** ($\hat{p} = 40.18\%$ vs $p_{\text{true}} = 39.50\%$), enabling CP-SAT to select a higher-value portfolio (+₹6,026.67 net value gain).
+- **Isotonic Model**: Reduces selection bias to **+0.68 pp** ($\hat{p} = 40.18\%$ vs $p_{\text{true}} = 39.50\%$), enabling CP-SAT to select a higher-value portfolio (+₹6,026.67 net value gain).
 
 ---
 
-## What Broke — and How the System Recovers
+## Failure Engineering
 
-Engineering and stress testing uncovered key edge cases, handled as follows:
+> *"We deliberately tested what happens when the system is wrong."*
 
-1. **Contact Fatigue Allocator Conflict**: Reallocating unconstrained items freed capacity for constrained accounts, enforcing contact caps across 100% of allocations.
-2. **WhatsApp Consent Fallback Bug**: Policy gate strictly blocks WhatsApp actions when consent is unverified, falling back to Retry or Escalation.
-3. **$\hat{p}$ vs $p_{\text{true}}$ Mismatch**: Kept model predictions ($\hat{p}$) separated from hidden ground-truth scoring ($p_{\text{true}}$), preventing evaluation leakage.
-4. **Missing Anthropic Credentials**: Handled via deterministic `rule_diagnoser.py` fallback without breaking the pipeline.
-5. **External Timeout**: Mapped to `UNCERTAIN` execution status without automatic retries.
-6. **Concurrent Duplicate Execution**: Prevented via database `idempotency_key` `UNIQUE` constraint returning `DUPLICATE_BLOCKED`.
-7. **Solver Failure**: Returns `SOLVER_FAILED` status with 0 unverified dispatches attempted.
+| Failure Scenario | System Response | Audit Event Recorded | Unsafe Dispatch Attempted? |
+| :--- | :--- | :--- | :---: |
+| **Duplicate Execution** | DB `idempotency_key` `UNIQUE` constraint rejection | `DUPLICATE_EXECUTION_BLOCKED` | **No** |
+| **External Timeout** | State machine transitions to `UNCERTAIN` (human review) | `EXECUTION_UNCERTAIN` | **No** |
+| **Low Confidence** | Policy gate outcome `ESCALATE` (auto-execution blocked) | `EXECUTION_BLOCKED` | **No** |
+| **Missing LLM Credentials** | Fallback to deterministic `rule_diagnoser.py` | `DIAGNOSIS_RULE_FALLBACK` | **No** |
+| **Solver Failure** | Returns `SOLVER_FAILED` status with safe empty plan | `OPTIMIZER_FAILED` | **No** |
+| **Missing Consent** | Policy gate `BLOCK` / fallback intervention | `EXECUTION_BLOCKED` | **No** |
 
 ---
 
 ## What to Look For in the Demo
 
-When exploring the Control Center dashboard at `http://localhost:8000/app/index.html`:
+When exploring the Control Center web dashboard at `http://localhost:8000/app/index.html`:
 
-1. **MCMKP Allocation Plan**: Click **Run MCMKP Allocation Plan** on the *Revenue Allocation* tab. Observe the spinner (`⟳ Running MCMKP Allocation...`), inspect the `OPTIMAL` CP-SAT solver result modal, and view capacity utilization bars.
-2. **Greedy vs MCMKP Comparison**: On the *Allocation Intelligence* tab, view the live side-by-side comparison illustrating the +11.26% optimization gain over naive sort.
-3. **Policy Gate Action Semantics**:
+1. **MCMKP Allocation Plan**: On the *Revenue Allocation* tab, click **Run MCMKP Allocation Plan**. Observe the button loading spinner (`⟳ Running MCMKP Allocation...`), inspect the `OPTIMAL` solver result modal, and view resource capacity utilization bars.
+2. **Greedy vs MCMKP**: On the *Allocation Intelligence* tab, view the live side-by-side comparison illustrating the +11.26% optimization gain over naive value-greedy sorting.
+3. **Policy Gate Semantics**:
    - `ALLOW` → **Execute** button active
    - `BLOCK` → **Blocked 🔒**
    - `ESCALATE` → **Review Req ⚠️**
@@ -126,25 +223,17 @@ When exploring the Control Center dashboard at `http://localhost:8000/app/index.
    - **Budget Exhaustion → Stop**: Solves under tight budget (2 Retries, 2 WhatsApp, 0 Human Hours), displaying 96 unserved items.
    - **Solver Failure → Safe Stop**: Triggers `SOLVER_FAILED` status with 0 dispatches attempted.
    - **Razorpay Test Payment Link**: Demonstrates credential-guarded execution (`NOT_EXECUTED` when test credentials are absent).
-5. **Audit Trail**: View real-time append-only event traces (`EXECUTION_REQUESTED` → `EXECUTION_CLAIMED` → `EXECUTION_DISPATCHED` → `EXECUTION_VERIFIED`).
+5. **Audit Trail & Executions**: View real-time append-only event traces (`EXECUTION_REQUESTED` → `EXECUTION_CLAIMED` → `EXECUTION_DISPATCHED` → `EXECUTION_VERIFIED`) and database idempotency records.
 6. **Evaluation Leaderboard**: View the 20-seed frozen evaluation benchmark table.
 
 ---
 
-## System Architecture & Pipeline
+## Razorpay Integration Status
 
-```
-[ Evidence Collection ] ──> [ Failure Diagnosis ] ──> [ Probability Model ] 
-                                                              │
-[ Audit Log & Executions ] <── [ Idempotent Executor ] <── [ Policy Gate ] <── [ MCMKP CP-SAT ]
-```
-
-1. **Evidence Collection**: Gathers account features, overdue days, historical attempts, and failure codes.
-2. **Evidence Diagnosis**: Categorizes failure reasons via `rule_diagnoser.py` (or optional LLM evidence classifier).
-3. **Probability Model**: Isotonic-calibrated HGB predicts recovery probability $p(\text{recovery} \mid \text{item}, \text{intervention})$.
-4. **MCMKP Optimizer**: OR-Tools CP-SAT maximizes total net recovery value subject to multi-resource constraints.
-5. **Policy Gate**: 100% deterministic rule chain enforces consent, floor limits, retry ceilings, and fatigue caps.
-6. **Idempotent Execution & Verification**: Executes dispatches via simulator or Razorpay test adapter guarded by SQLite DB `UNIQUE(idempotency_key)`.
+- **Test-Mode Adapter**: Supports `RazorpayTestExecutor` for creating test-mode Payment Links (`POST /v1/payment_links`).
+- **Credential Guard**: When `RAZORPAY_TEST_KEY_ID` and `RAZORPAY_TEST_KEY_SECRET` are absent, the system safely routes dispatches to the `Test Simulator` adapter with status `NOT_EXECUTED`.
+- **Uncertain Timeout Handling**: Network timeouts during payment link creation transition to `UNCERTAIN` state without triggering unsafe automatic retries.
+- **Safety Statement**: No live production Razorpay dispatches or real-money transactions were performed.
 
 ---
 
@@ -154,29 +243,41 @@ When exploring the Control Center dashboard at `http://localhost:8000/app/index.
 - **Build Command**: `pip install -r requirements.txt`
 - **Start Command**: `python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT`
 - **Working Directory**: `backend/`
-- **Health Check Path**: `/health` (HTTP 200)
+- **Health Check Path**: `/health` (returns HTTP 200 `{"status": "ok", ...}`)
 - **Frontend Path**: `/app/index.html` (mounted automatically at `/app`)
 - **Required Environment Variables**:
-  - `PORT`: (Provided dynamically by host environment)
+  - `PORT`: (Provided dynamically by Render host environment)
 - **Optional Environment Variables**:
   - `RAZORPAY_TEST_KEY_ID`: Razorpay test key ID
   - `RAZORPAY_TEST_KEY_SECRET`: Razorpay test secret
   - `ANTHROPIC_API_KEY`: Anthropic Claude API key
 - **SQLite Database Behavior**:
-  The SQLite database file (`data/recover_alloc_demo.db`) is automatically initialized on application startup. In ephemeral container environments (such as Render Web Services), SQLite operates as disposable demo state that resets cleanly on container restarts.
+  The SQLite database file (`data/recover_alloc_demo.db`) is automatically initialized on startup. In ephemeral container environments (such as Render Web Services), SQLite operates as disposable demo state that resets cleanly on container restarts.
 
 ---
 
 ## If This Went to Production
 
-The following steps outline future production-hardening requirements for live deployment:
-1. **Validated Production Data Pipelines**: Connect directly to merchant core databases and Razorpay Webhook streams.
-2. **Persistent Production Database**: Replace local SQLite with managed PostgreSQL (e.g. AWS RDS or Render Postgres).
-3. **Merchant Custom Policy Engine**: Expose merchant-specific rule overrides (custom retry delays, brand-specific fatigue caps).
-4. **Calibration Drift Monitoring**: Automated background re-calibration on new transaction outcomes.
-5. **Human Escalation Workflow**: Integrated operator dashboard for manually reviewing `ESCALATE` accounts.
+1. **Validated Production Pipelines**: Direct integration with merchant core billing databases and Razorpay Webhook event streams.
+2. **Persistent Production Storage**: Replace local SQLite with managed PostgreSQL (e.g., AWS RDS or Render Postgres).
+3. **Merchant Custom Policy Overrides**: Configurable policy tiers for merchant-specific retry delays and brand fatigue caps.
+4. **Calibration Drift Monitoring**: Automated background re-calibration on live payment transaction outcomes.
+5. **Human Escalation Workflow**: Operator review dashboard for handling `ESCALATE` accounts.
 6. **Production Observability**: OpenTelemetry tracing and Prometheus metrics.
-7. **Razorpay Live-Mode Integration**: Transition test-mode payment link executor to live production Payment Links API with webhook reconciliation.
+7. **Razorpay Live-Mode Integration**: Upgrade test-mode Payment Link executor to live Razorpay APIs with webhook reconciliation.
+
+---
+
+## Technical Deep Dives
+
+The README explains the system and the evidence. These documents contain the deeper engineering verification behind the key claims.
+
+| Deep Dive | Evidence |
+|---|---|
+| [Optimizer Verification](docs/OPTIMIZER_VERIFICATION_STATUS.md) | CP-SAT correctness against an independent brute-force reference on small instances |
+| [Execution State Machine](docs/EXECUTION_STATE_MACHINE.md) | Idempotency, concurrency, timeout handling, crash safety, and reconciliation |
+| [ML Diagnostic Findings](docs/ML_DIAGNOSTIC_FINDINGS.md) | Observable signal, model limitations, calibration, and optimizer-selection effects |
+| [LLM Ablation](docs/LLM_ABLATION.md) | LLM safety boundary, deterministic fallback, and honest evaluation limitations |
 
 ---
 
@@ -202,7 +303,7 @@ Open browser to: `http://localhost:8000/app/index.html`
 ```
 recover-alloc/
 ├── render.yaml                 # Render deployment configuration
-├── Makefile                    # Developer tasks
+├── Makefile                    # Developer task runner
 ├── README.md                   # System documentation & verification report
 ├── backend/
 │   ├── api/                    # FastAPI endpoints & SQLite database helpers

@@ -160,3 +160,17 @@ the risk_flags feature enough training examples to be learnable — but
 that changes the synthetic population's realism trade-off and should be
 a deliberate, separately-reviewed decision, not bundled into this
 diagnostic.
+
+---
+
+## Calibration & Optimizer-Selection Effects
+
+When uncalibrated probabilities are passed to the CP-SAT solver, the optimizer selectively picks over-predicted items (**Optimizer's Curse**). Isotonic calibration dramatically reduces this selection bias:
+
+| Model Version | Selected Portfolio $\hat{p}$ | Selected Portfolio $p_{\text{true}}$ | Selection Bias |
+| :--- | :---: | :---: | :---: |
+| **Raw Uncalibrated HGB** | 67.10% | 39.50% | **+27.60 pp** |
+| **Isotonic Calibrated Model (v1.0.0)** | 40.18% | 39.50% | **+0.68 pp** |
+
+- **Raw HGB**: Suffers from **+27.60 percentage points** selection optimism bias.
+- **Isotonic Calibration**: Reduces selection bias to **+0.68 pp**, enabling the optimizer to select a higher-value, globally feasible portfolio under resource constraints.
