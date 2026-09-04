@@ -25,9 +25,21 @@
                                   VERIFIED_SUCCESS  VERIFIED_FAILED
 
   idempotency claim loses --> DUPLICATE_EXECUTION_BLOCKED
-     (no DB row for this process; the existing row's state is
-      reported, but this process never transitions anything)
+     (no second DB row created for this process; the existing execution record
+      is returned; this process performs no state transition and makes no external call)
 ```
+
+## State Semantics
+
+| State | Meaning | Automatic retry? |
+|---|---|---|
+| `CLAIMED` | Internal ownership acquired; external dispatch has not yet been confirmed | Only after reconciliation establishes safe pre-dispatch state |
+| `DISPATCH_FAILED` | Failure confirmed before any external side effect | Yes, as a new execution attempt |
+| `UNCERTAIN` | External outcome cannot be established | **Never** |
+| `DISPATCHED` | External dispatch returned a side-effecting/accepted result | No retry; proceed to verification |
+| `VERIFIED_SUCCESS` | External action confirmed successful | Terminal |
+| `VERIFIED_FAILED` | External action confirmed failed | Terminal |
+| `DUPLICATE_EXECUTION_BLOCKED` | Another process already owns the idempotency key | No second claim or external call |
 
 ## The invariant that makes this safe
 
@@ -43,10 +55,9 @@ that won the claim, using its own row's primary key, never by a second
 **"Process claims execution, then crashes; external action may or may
 not have happened."**
 
-- If the crash happens **before** `adapter.execute()` is even called,
-  the row is stuck in `CLAIMED` forever unless a separate reconciliation
-  process inspects it. This is **safe to hand to a fresh attempt** —
-  nothing was ever sent externally. A reconciliation job can detect a
+- If the crash is **provably before** `adapter.execute()` was called,
+  no external action was attempted and the existing `CLAIMED` row can
+  safely be reopened for another dispatch attempt. A reconciliation job can detect a
   `CLAIMED` row older than a configured staleness threshold with no
   `dispatched_at` timestamp and safely re-open it for a new dispatch
   attempt using the SAME row (not a new idempotency key — no external
@@ -62,11 +73,18 @@ not have happened."**
   reconciliation check against the external system's own records, or
   (b) explicit human sign-off to proceed.
 
+These cases are intentionally different: a confirmed pre-side-effect
+`DISPATCH_FAILED` represents a completed failed execution attempt and
+therefore starts a new execution attempt with a new idempotency key,
+whereas a stale `CLAIMED` row proven to have never reached the external
+adapter can be safely reopened using the existing execution record.
+
 This system does **not** claim exactly-once delivery to Razorpay's API.
-It claims exactly-once **internal ownership** of an idempotency key, and
-honest, auditable uncertainty when the external outcome can't be
-confirmed — which is the maximum honest guarantee an internal system can
-make without relying on the external API's own idempotency semantics.
+It guarantees exactly-once **internal ownership** of each idempotency key
+within the execution database, and provides honest, auditable uncertainty
+when the external outcome cannot be confirmed — which is the maximum
+honest guarantee an internal system can make without relying on the
+external API's own idempotency semantics.
 
 ## Reconciliation is a deliberately separate, narrow operation
 
@@ -74,5 +92,8 @@ make without relying on the external API's own idempotency semantics.
 or stale `CLAIMED` rows as part of normal request handling — that logic
 lives in a distinct `reconcile_stale_claims()` function, called out of
 band (e.g. a periodic job), so the request path itself stays simple and
-auditable, and a demo can show a stale claim as a visibly different,
-deliberately-not-auto-fixed state.
+auditable. Reconciliation determines whether a stale `CLAIMED` record is
+eligible for reopening based on persisted evidence (such as the absence of
+a `dispatched_at` timestamp, exceeding a configured staleness threshold,
+and evidence that the external adapter call had not begun). Stale `CLAIMED`
+rows are not assumed to be blindly safe without verifying these evidence conditions.
