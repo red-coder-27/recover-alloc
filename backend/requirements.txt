@@ -11,7 +11,7 @@ pydantic==2.9.2
 sqlalchemy==2.0.35
 alembic==1.13.2
 psycopg2-binary==2.9.9
-ortools==9.11.4210
+ortools==9.15.6755
 scikit-learn==1.5.2
 numpy==1.26.4
 anthropic==0.34.2
